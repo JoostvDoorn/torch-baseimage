@@ -1,5 +1,6 @@
-FROM ubuntu:14.04
-MAINTAINER Soumith Chintala <soumith@gmail.com>
+FROM phusion/baseimage
+MAINTAINER Joost van Doorn <joost.van.doorn@gmail.com>
+# Original by Soumith Chintala
 RUN apt-get update
 ###############################
 #### Install dependencies for torch
