@@ -35,7 +35,7 @@ RUN apt-get install -y npm
 RUN apt-get install -y libfftw3-dev sox libsox-dev libsox-fmt-all
 RUN apt-get update
 RUN git clone https://github.com/xianyi/OpenBLAS.git /tmp/OpenBLAS
-RUN cd /tmp/OpenBLAS && make NO_AFFINITY=1 USE_OPENMP=1 && make install
+RUN cd /tmp/OpenBLAS && make NO_AFFINITY=1 USE_THREAD=0 && make install
 ###########################################
 ### Now install torch
 ###########################################
